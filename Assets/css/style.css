@@ -1,0 +1,141 @@
+/*----------General----------*/
+body {
+	background-color: #273136;
+	color: white;
+	margin: 1%;
+	font-size: 16px;
+}
+
+/*----------Grid Page----------*/
+.item1 {
+	grid-area: header;
+	background-color: #386982;
+	margin-top: 0;
+	padding: 15px;
+	text-align: center;
+}
+
+.IdPic {
+	width: 150px;
+	height: 150px;
+	margin: 8px;
+	border-radius: 50%;
+	border: solid 2px white;
+}
+
+
+
+.item2 {
+	grid-area: contact;
+	border: solid 1px #5A98B7;
+	text-align: center;
+
+
+}
+
+.item3 {
+	grid-area: main;
+	border: solid 1px #5A98B7;
+
+}
+
+.item4 {
+	grid-area: right;
+	border: solid 1px #5A98B7;
+
+}
+
+.item5 {
+	grid-area: footer;
+	border: solid 1px #5A98B7;
+}
+
+.grid-container {
+	display: grid;
+	grid-template-areas:
+		'header header header header header header'
+		'contact main main main main right'
+		'contact footer footer footer footer footer';
+}
+
+/*----------Titles----------*/
+h1 {
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+	text-decoration: underline;
+}
+
+h2 {
+	text-align: center;
+	font-family: 'EB Garamond', serif;
+	background-color: #5A98B7;
+	margin: 0;
+	padding: 6px;
+
+}
+
+/*----------Listes----------*/
+
+ul {
+	list-style-type: none;
+}
+
+
+/*----------Grid item 2 / Identité / RS----------*/
+
+.logo {
+	max-width: 32px;
+	max-height: 36px;
+}
+
+
+/*----------Grid item 5 / Loisirs ----------*/
+
+.item5>.grid-container {
+	display: grid;
+	grid-template-columns: repeat(autofit, minmax(300px, 1fr));
+	grid-auto-rows: 300px;
+	gap: 10px;
+	padding: 10px;
+}
+
+#cook {
+	grid-column: 1 / span 2;
+	background-image: url(../Img/cook.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+#games {
+	background-image: url(../Img/jeux.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#prod {
+		background-image: url(../Img/synth.jpg);
+	background-size: cover;
+	background-position: center;
+
+}
+
+#party {
+	background-image: url(../Img/fest.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#travel {
+	background-image: url(../Img/voyage.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+@media only screen (min-width:768px) {
+	
+}
+.zoom :hover {
+	color: rgba(197, 207, 216, 0.309);
+	transform: scale(1.1);
+}
