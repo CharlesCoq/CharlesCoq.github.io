@@ -124,11 +124,14 @@ body {
 }
 
 .item2>a :hover {
-	transform:scale(1.25);
+	transform: scale(1.25);
 }
 
 
-/*----------Skills----------*/
+/*----------Hard Skills----------*/
+/*----------Hard Skills----------*/
+/*----------Hard Skills----------*/
+/*----------Hard Skills----------*/
 .item3 {
 	grid-area: main;
 	border: solid 1px #5A98B7;
@@ -151,18 +154,33 @@ body {
 	margin: 3%;
 }
 
+#figmabck {
+	margin-left: 8%;
+}
+
+@media only screen and (minwidth: 768px) {
+	#notionbck {
+		margin-left: 10%;
+	}
+}
+
+/*----------Fx----------*/
 .HardSkills>a :hover {
 	transform: scale(1.25)
 }
 
+/*----------Soft Skills----------*/
+/*----------Soft Skills----------*/
+/*----------Soft Skills----------*/
+/*----------Soft Skills----------*/
 .SoftSkills {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-evenly;
 }
 
-.SoftSkills li{
-	margin: 2%;
+.SoftSkills li {
+	margin: 1%;
 }
 
 .SoftSkills>img {
@@ -172,13 +190,19 @@ body {
 }
 
 /*---------- Formations ----------*/
+/*---------- Formations ----------*/
+/*---------- Formations ----------*/
+/*---------- Formations ----------*/
 .item4 {
 	grid-area: right;
 	border: solid 1px #5A98B7;
-
+	text-align: center;
 }
 
-/*----------Grid item 5 / Loisirs ----------*/
+/*----------Loisirs----------*/
+/*----------Loisirs----------*/
+/*----------Loisirs----------*/
+/*----------Loisirs----------*/
 
 .item5 {
 	grid-area: footer;
@@ -193,9 +217,6 @@ body {
 	margin: 1%;
 }
 
-.item5>.grid-container :hover {
-	transform: scale(1.05);
-}
 
 .zoom {
 	border: solid 1px #386982;
@@ -245,3 +266,7 @@ body {
 	text-align: center;
 }
 
+/*----------Fx----------*/
+.item5>.grid-container :hover {
+	transform: scale(1.05);
+}

@@ -8,3 +8,6 @@ document.querySelector('.contact-window').addEventListener('click', function(e) 
         this.style.display = 'none';
     }
 });
+
+
+// VOIR PLUS
