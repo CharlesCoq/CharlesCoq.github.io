@@ -76,8 +76,6 @@ body {
 	}
 }
 
-/*----------Id Img Anim----------*/
-
 /*----------Grid Page----------*/
 
 @media only screen and (min-width:768px) {
@@ -108,6 +106,9 @@ body {
 	border: solid 2px white;
 }
 
+/*----------Contact----------*/
+/*----------Contact----------*/
+/*----------Contact----------*/
 /*----------Contact----------*/
 .item2 {
 	grid-area: contact;
@@ -163,6 +164,11 @@ body {
 		margin-left: 10%;
 	}
 }
+
+/*----------Modal----------*/
+
+
+
 
 /*----------Fx----------*/
 .HardSkills>a :hover {
