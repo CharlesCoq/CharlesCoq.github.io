@@ -4,6 +4,8 @@ body {
 	padding: 0px;
 	width: 100%;
 
+	forced-color-adjust: none;
+
 	font-size: 16px;
 	color: white;
 	font-family: 'Noto Sans', sans-serif;
@@ -173,23 +175,30 @@ hr {
 
 
 .HardSkills a {
-	
+
 	width: 5rem;
 	height: 5rem;
 
 }
 
 .HardSkills img {
-
-	padding: 3rem;
+	padding: 2rem;
+	margin-left: 20px;
 	width: 5rem;
-	height: 5rem;
-
+	height: 5.5rem;
 }
 
-.hskills > a :hover {
-	transform: scale(1.25)
+.hskills {
+
+	align-items: center;
 }
+
+.hskills>a :hover {
+	transform: scale(1.25);
+}
+
+
+
 /*----------Modal----------*/
 
 
@@ -203,21 +212,25 @@ hr {
 	grid-template-columns: auto auto auto;
 }
 
-.softEl{
+.softEl {
 	margin-left: 0%;
 	margin-top: 1rem;
 	margin-bottom: 0.8rem;
 }
 
-.softEl > ul{
+.softEl>ul {
 	padding-left: 20px;
 }
 
-#listTwo{
+ul>li {
+	padding-bottom: 12px;
+}
+
+#listTwo {
 	padding-left: 10px;
 }
 
-.softEl > img {
+.softEl>img {
 	width: 8rem;
 	height: 8rem;
 }
@@ -232,12 +245,38 @@ hr {
 	text-align: center;
 }
 
-.formation {
+.formations {
+	/* margin: 8px;
+	height: 18rem;
 	background-image: url(../Img/diplômes/degree.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 10rem;
-	background-position-y: 4rem;
+	background-position-y: 6rem; */
+
+	border: solid 1px #5A98B7;
+	border-radius: 3px;
+}
+
+.degrees {
+	display: flex;
+	flex-direction: column;
+}
+
+.reveal-if-active {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transform: scale(0.8);
+	transition: 0.8s;
+}
+
+input[type="radio"]:checked~.reveal-if-active,
+input[type="checkbox"]:checked~.reveal-if-active {
+	opacity: 1;
+	max-height: 13rem;
+	overflow: visible;
+	transform: scale(1);
 }
 
 /*----------Loisirs----------*/
