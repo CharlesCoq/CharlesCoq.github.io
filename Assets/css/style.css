@@ -1,23 +1,21 @@
 /*----------General----------*/
 body {
-	background-color: #273136;
-	color: white;
-	margin: 1%;
-	font-size: 16px;
-	font-family: 'Noto Sans', sans-serif;
+	margin: 0px;
+	padding: 0px;
 	width: 100%;
+
+	font-size: 16px;
+	color: white;
+	font-family: 'Noto Sans', sans-serif;
+
 	background-image: repeating-linear-gradient(173deg, rgb(39, 49, 54) 0px, rgb(39, 49, 54) 0px, transparent 0px, transparent 1px, rgb(39, 49, 54) 1px, rgb(39, 49, 54) 4px, transparent 4px, transparent 5px, rgb(39, 49, 54) 5px, rgb(39, 49, 54) 8px), repeating-linear-gradient(218deg, rgb(39, 49, 54) 0px, rgb(39, 49, 54) 0px, transparent 0px, transparent 1px, rgb(39, 49, 54) 1px, rgb(39, 49, 54) 4px, transparent 4px, transparent 5px, rgb(39, 49, 54) 5px, rgb(39, 49, 54) 8px), linear-gradient(128deg, rgb(59, 59, 59), rgb(4, 4, 4));
 }
 
 /*----------h1 Anim----------*/
 .titlebox1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
+
 	font-family: 'Noto Sans', sans-serif;
 
-	margin: 0;
 }
 
 .waviy1 {
@@ -106,25 +104,54 @@ body {
 	border: solid 2px white;
 }
 
+hr {
+	color: white;
+	text-align: center;
+	width: 20rem;
+}
+
+#work {
+	font-size: 22px;
+}
+
 /*----------Contact----------*/
 /*----------Contact----------*/
 /*----------Contact----------*/
 /*----------Contact----------*/
-.item2 {
+
+.contact-window {
 	grid-area: contact;
 	border: solid 1px #5A98B7;
 	text-align: center;
 }
 
+.contactItems {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+
+.contactItems>div {
+	margin: 1rem;
+}
+
+@media only screen and (min-width:768px) {
+
+	.contactItems {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+
 .logo {
-	width: 32px;
-	height: 36px;
+	width: 3rem;
+	height: 3rem;
 	margin: 1%;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
 
-.item2>a :hover {
+.contactDiv>a :hover {
 	transform: scale(1.25);
 }
 
@@ -135,64 +162,64 @@ body {
 /*----------Hard Skills----------*/
 .item3 {
 	grid-area: main;
+	width: auto;
 	border: solid 1px #5A98B7;
-	width: 100%;
 }
 
-.Hardskills {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-evenly;
+.HardSkills {
+	display: grid;
+	grid-template-columns: auto auto;
 }
+
 
 .HardSkills a {
-	width: 75px;
-	margin: 3%;
+	
+	width: 5rem;
+	height: 5rem;
+
 }
 
 .HardSkills img {
-	height: 75px;
-	margin: 3%;
+
+	padding: 3rem;
+	width: 5rem;
+	height: 5rem;
+
 }
 
-#figmabck {
-	margin-left: 8%;
+.hskills > a :hover {
+	transform: scale(1.25)
 }
-
-@media only screen and (minwidth: 768px) {
-	#notionbck {
-		margin-left: 10%;
-	}
-}
-
 /*----------Modal----------*/
 
 
-
-
-/*----------Fx----------*/
-.HardSkills>a :hover {
-	transform: scale(1.25)
-}
 
 /*----------Soft Skills----------*/
 /*----------Soft Skills----------*/
 /*----------Soft Skills----------*/
 /*----------Soft Skills----------*/
 .SoftSkills {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
+	display: grid;
+	grid-template-columns: auto auto auto;
 }
 
-.SoftSkills li {
-	margin: 1%;
+.softEl{
+	margin-left: 0%;
+	margin-top: 1rem;
+	margin-bottom: 0.8rem;
 }
 
-.SoftSkills>img {
-	height: 105px;
-	margin: 1%;
-	margin-left: 4%;
+.softEl > ul{
+	padding-left: 20px;
+}
+
+#listTwo{
+	padding-left: 10px;
+}
+
+.softEl > img {
+	width: 8rem;
+	height: 8rem;
 }
 
 /*---------- Formations ----------*/
@@ -203,6 +230,14 @@ body {
 	grid-area: right;
 	border: solid 1px #5A98B7;
 	text-align: center;
+}
+
+.formation {
+	background-image: url(../Img/diplômes/degree.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 10rem;
+	background-position-y: 4rem;
 }
 
 /*----------Loisirs----------*/
