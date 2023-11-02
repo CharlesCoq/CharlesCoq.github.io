@@ -106,7 +106,7 @@ body {
 	border: solid 2px white;
 }
 
-hr {
+.item1 > hr {
 	color: white;
 	text-align: center;
 	width: 20rem;
@@ -222,8 +222,9 @@ hr {
 	padding-left: 20px;
 }
 
-ul>li {
+.softEl>ul>li {
 	padding-bottom: 12px;
+	list-style: none;
 }
 
 #listTwo {
@@ -242,25 +243,19 @@ ul>li {
 .item4 {
 	grid-area: right;
 	border: solid 1px #5A98B7;
-	text-align: center;
 }
 
 .formations {
-	/* margin: 8px;
-	height: 18rem;
-	background-image: url(../Img/diplômes/degree.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 10rem;
-	background-position-y: 6rem; */
-
 	border: solid 1px #5A98B7;
 	border-radius: 3px;
+	margin: 5px;
 }
 
 .degrees {
 	display: flex;
 	flex-direction: column;
+	list-style: none;
+	padding-left: unset;
 }
 
 .reveal-if-active {
@@ -271,13 +266,37 @@ ul>li {
 	transition: 0.8s;
 }
 
-input[type="radio"]:checked~.reveal-if-active,
 input[type="checkbox"]:checked~.reveal-if-active {
 	opacity: 1;
 	max-height: 13rem;
 	overflow: visible;
 	transform: scale(1);
 }
+
+.box{
+	margin: 5px;
+}
+
+
+
+/* Disparition de la checkbox par défaut */
+/* .degrees input {
+
+} */
+
+
+/* Nouvelle icon checkbox */
+/* .checkmark {
+	margin-left: 5px;
+	height: 35px;
+	width: 35px;
+	background-image: url(../Icon/Formations/eye-closed-svgrepo-com.png);
+	background-size: 35px 35px;
+	border-radius: 50%;
+	cursor: pointer;
+} */
+
+/* .degrees:hover input~.checkmark {} */
 
 /*----------Loisirs----------*/
 /*----------Loisirs----------*/
