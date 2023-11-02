@@ -4,7 +4,7 @@ body {
 	padding: 0px;
 	width: 100%;
 
-	forced-color-adjust: none;
+	/* forced-color-adjust: none; */
 
 	font-size: 16px;
 	color: white;
@@ -106,7 +106,7 @@ body {
 	border: solid 2px white;
 }
 
-.item1 > hr {
+.item1>hr {
 	color: white;
 	text-align: center;
 	width: 20rem;
@@ -130,6 +130,7 @@ body {
 .contactItems {
 	display: grid;
 	grid-template-columns: auto auto;
+	width: 100%;
 }
 
 .contactItems>div {
@@ -146,15 +147,34 @@ body {
 
 
 .logo {
-	width: 3rem;
-	height: 3rem;
+
 	margin: 1%;
 	margin-top: 5px;
 	margin-bottom: 10px;
 }
 
 .contactDiv>a :hover {
-	transform: scale(1.25);
+	transform: scale(1.22);
+}
+
+#logophone {
+	width: 3.4rem;
+	height: 3.5rem;
+}
+
+#logomail {
+	width: 3.5rem;
+	height: 3rem;
+}
+
+#logoLK {
+	width: 3.2rem;
+	height: 3.3rem;
+}
+
+#logogit {
+	width: 3.5rem;
+	height: 3.5rem;
 }
 
 
@@ -246,8 +266,6 @@ body {
 }
 
 .formations {
-	border: solid 1px #5A98B7;
-	border-radius: 3px;
 	margin: 5px;
 }
 
@@ -271,13 +289,37 @@ input[type="checkbox"]:checked~.reveal-if-active {
 	max-height: 13rem;
 	overflow: visible;
 	transform: scale(1);
+	margin: 1rem;
 }
 
-.box{
+.box {
+	position: relative;
 	margin: 5px;
+	border: solid 1px #5A98B7;
+	border-radius: 3px;
 }
 
+.box>label>p {
+text-align: center;
 
+}
+
+.box input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+}
+
+.checkmark>img {
+	position: absolute;
+	left: 10px;
+	top: 0;
+	width: 3rem;
+	height: 3rem;
+	z-index: -1;
+}
 
 /* Disparition de la checkbox par défaut */
 /* .degrees input {
