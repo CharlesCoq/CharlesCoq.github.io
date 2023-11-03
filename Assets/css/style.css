@@ -191,31 +191,46 @@ body {
 .hardBox {
 	display: grid;
 	grid-template-columns: auto auto;
+	height: 990px;
+	padding: 1.5rem;
 }
 
 .hskills {
-	align-items: center;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	height: 10rem;
+	width: 100%;
+	
 }
 
-.hskills>h3 {
-	text-align: center;
+.hskills :hover svg {
+	transform: scale(1.15);
+	transition: 0.5s;
+	filter: drop-shadow(0 0 0.4rem rgb(32, 170, 212));
+}
+
+.hskills svg {
+	transition: 0.5s;
 }
 
 .hskills a {
 	width: 5rem;
 	height: 5rem;
+	text-decoration: none;
+	text-align: center;
+	color: white;
 }
 
-.hskills>a :hover {
-	transform: scale(1.25);
+.hskills>a>h3 {
+	/* margin-bottom: 20px; */
+	background-color: #ffffff00;
 }
-
 .hskills img {
-	padding: 2rem;
-	margin-left: 20px;
 	width: 5rem;
 	height: 5.5rem;
 }
+
 
 
 /*----------Modal----------*/
@@ -324,6 +339,7 @@ input[type="checkbox"]:checked~.reveal-if-active {
 	height: 2.5rem;
 	z-index: -1;
 }
+
 .checkmark>#eyeClose2 {
 	position: absolute;
 	right: 10px;
@@ -332,6 +348,7 @@ input[type="checkbox"]:checked~.reveal-if-active {
 	height: 2.5rem;
 	z-index: -1;
 }
+
 .checkmark>#eyeClose3 {
 	position: absolute;
 	right: 10px;
