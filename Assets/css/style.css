@@ -295,13 +295,18 @@ input[type="checkbox"]:checked~.reveal-if-active {
 .box {
 	position: relative;
 	margin: 5px;
-	border: solid 1px #5A98B7;
+	border: solid 1px #ffffff;
 	border-radius: 3px;
 }
 
-.box>label>p {
-text-align: center;
+.upperHr {
+	width: 75%;
+	border-color: #5a98b79a;
+}
 
+.box>label>h3 {
+	text-align: center;
+	font-size: 18px;
 }
 
 .box input {
@@ -312,33 +317,31 @@ text-align: center;
 	width: 100%;
 }
 
-.checkmark>img {
+.checkmark>#eyeClose1 {
 	position: absolute;
-	left: 10px;
+	right: 10px;
 	top: 0;
-	width: 3rem;
-	height: 3rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	z-index: -1;
+}
+.checkmark>#eyeClose2 {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	width: 2.5rem;
+	height: 2.5rem;
+	z-index: -1;
+}
+.checkmark>#eyeClose3 {
+	position: absolute;
+	right: 10px;
+	top: 0;
+	width: 2.5rem;
+	height: 2.5rem;
 	z-index: -1;
 }
 
-/* Disparition de la checkbox par défaut */
-/* .degrees input {
-
-} */
-
-
-/* Nouvelle icon checkbox */
-/* .checkmark {
-	margin-left: 5px;
-	height: 35px;
-	width: 35px;
-	background-image: url(../Icon/Formations/eye-closed-svgrepo-com.png);
-	background-size: 35px 35px;
-	border-radius: 50%;
-	cursor: pointer;
-} */
-
-/* .degrees:hover input~.checkmark {} */
 
 /*----------Loisirs----------*/
 /*----------Loisirs----------*/

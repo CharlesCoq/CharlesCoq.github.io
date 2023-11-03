@@ -64,7 +64,8 @@
 				<div class="contactDiv">
 					<p>Téléphone</p>
 					<a href="tel:0751646297">
-						<img src="Assets/Icon/Contact/phone.png" class="logo" alt="numéro de téléphone: 0751646297" id="logophone">
+						<img src="Assets/Icon/Contact/phone.png" class="logo" alt="numéro de téléphone: 0751646297"
+							id="logophone">
 					</a>
 				</div>
 				<div class="contactDiv">
@@ -76,7 +77,8 @@
 				<div class="contactDiv">
 					<p>LinkedIn</p>
 					<a href="https://www.linkedin.com/in/charles-coquerelle-007235291"><img
-							src="Assets/Icon/SocialMedia/linkedin-in.png" class="logo linkedin" alt="LinkedIn logo" id="logoLK"></a>
+							src="Assets/Icon/SocialMedia/linkedin-in.png" class="logo linkedin" alt="LinkedIn logo"
+							id="logoLK"></a>
 				</div>
 
 				<div class="contactDiv">
@@ -223,45 +225,62 @@
 			<div class="formations">
 				<div class="degrees">
 					<div class="box">
-						<input type="checkbox" id="dwwm" name="degree" value="DWWM">
-						<label for="dwwm" class="container"><p>Developpeur</p></label>
-						<span class="checkmark"><img src="Assets/Icon/Formations/eye-closed-svgrepo-com.png" alt=""></span>
+						<input type="checkbox" id="dwwm" name="degree" value="DWWM" onclick="changeIcon1()">
+						<label for=" dwwm" class="container" ">
+							<h3>Developpeur</h3>
+						</label>
+						<span class=" checkmark"><img src="Assets/Icon/Formations/EyeClose.png" alt="icon eye close" id="eyeClose1"></span>
 
 						<div class="reveal-if-active">
-							<p>Titre Professionnel d’Etat « Développeur Web et Web Mobile » RNCP 31114, Bac+2</p>
-							<p>La Manu - Ecole Supérieure des Métiers du Numérique</p>
-							<p>Lacroix-Saint-Ouen</p>
+							<hr>
+							<p>Titre Professionnel d’Etat</p>
+							<p>« Développeur Web et Web Mobile »
+							<p> RNCP 31114 - Bac+2</p>
+							<hr class="upperHr">
+							<Lacroix-Saint-Ouen>La Manu - Ecole Supérieure des Métiers du Numérique - Lacroix-Saint-Ouen
+								</p>
 						</div>
 					</div>
-					<hr>
+
 					<div class="box">
-						<input type="checkbox" id="as" name="degree" value="AS">
-						<label for="as" class="container"><p>Soignant</p></label>
-						<span class="checkmark"><img src="Assets/Icon/Formations/eye-closed-svgrepo-com.png" alt=""></span>
+						<input type="checkbox" id="as" name="degree" value="AS" onclick="changeIcon2()">
+						<label for=" as" class="container">
+						<h3>Soignant</h3>
+						</label>
+						<span class="checkmark"><img src="Assets/Icon/Formations/EyeClose.png" alt="icon eye close"
+								id="eyeClose2"></span>
 
 						<div class="reveal-if-active">
+							<hr>
 							<p>Diplôme d'Etat d'aide-soignant</p>
-							<p>Assistance Publique des Hôpitaux de Paris</p>
+							<p>RNCP 4495</p>
+							<hr class="upperHr">
+							<p>Assistance Publique des Hôpitaux de Paris - APHP</p>
 							<p>IFSI de Saint-Louis</p>
 						</div>
 					</div>
-					<hr>
+
 					<div class="box">
-						<input type="checkbox" id="bac" name="degree" value="BAC">
-						<label for="bac" class="container"><p>Bac Littéraire</p></label>
-						<span class="checkmark"><img src="Assets/Icon/Formations/eye-closed-svgrepo-com.png" alt=""></span>
+						<input type="checkbox" id="bac" name="degree" value="BAC" onclick="changeIcon3()"">
+						<label for=" bac" class="container">
+						<h3>Bac Littéraire</h3>
+						</label>
+						<span class="checkmark"><img src="Assets/Icon/Formations/EyeClose.png" alt="icon eye close"
+								id="eyeClose3"></span>
 
 						<div class="reveal-if-active">
+							<hr>
 							<p>Bac Littéraire</p>
+							<hr class="upperHr">
 							<p>Lycée Charles de Gaulle</p>
 							<p>Compiègne</p>
 						</div>
 					</div>
-					<hr>
+
 				</div>
 
 				<div class="certif">
-					<input type="radio" id="bac" name="degree" value="BAC">
+					<!-- <input type="radio" id="bac" name="degree" value="BAC">
 					<span class="checkmark"></span>
 					<label for="bac">Certification: ANSSI</label>
 					<p></p>
@@ -269,7 +288,7 @@
 					<input type="radio" id="bac" name="degree" value="BAC">
 					<span class="checkmark"></span>
 					<label for="bac">Certif Meta</label>
-					<p></p>
+					<p></p> -->
 				</div>
 			</div>
 
@@ -289,11 +308,7 @@
 						<span style="--i:10">o</span>
 					</div>
 				</div>
-
-
 			</div>
-
-
 		</div>
 
 		<!-----------------------------Loisirs-------------------------------->
@@ -320,6 +335,10 @@
 				<div id="travel" class="zoom">Voyage</div>
 			</div>
 		</div>
+
+
+		<script src="Assets/js/app.js"></script>
+	</div>
 </body>
 
 </html>
