@@ -153,9 +153,22 @@ body {
 	margin-bottom: 10px;
 }
 
-.contactDiv>a :hover {
-	transform: scale(1.22);
+.contactDiv>a{
+	text-decoration: none;
+	color: #fff;
+
 }
+
+.contactDiv :hover svg {
+	transform: scale(1.15);
+	transition: 0.5s;
+	filter: drop-shadow(0 0 0.4rem rgb(32, 212, 41));
+}
+
+.contactDiv svg {
+	transition: 0.5s;
+}
+
 
 #logophone {
 	width: 3.4rem;
@@ -223,7 +236,6 @@ body {
 }
 
 .hskills>a>h3 {
-	/* margin-bottom: 20px; */
 	background-color: #ffffff00;
 }
 .hskills img {
@@ -295,7 +307,7 @@ body {
 	max-height: 0;
 	overflow: hidden;
 	transform: scale(0.8);
-	transition: 0.8s;
+	transition: 0.5s;
 }
 
 input[type="checkbox"]:checked~.reveal-if-active {
