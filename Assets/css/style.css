@@ -188,35 +188,34 @@ body {
 	border: solid 1px #5A98B7;
 }
 
-.HardSkills {
+.hardBox {
 	display: grid;
 	grid-template-columns: auto auto;
 }
 
+.hskills {
+	align-items: center;
+}
 
-.HardSkills a {
+.hskills>h3 {
+	text-align: center;
+}
 
+.hskills a {
 	width: 5rem;
 	height: 5rem;
-
-}
-
-.HardSkills img {
-	padding: 2rem;
-	margin-left: 20px;
-	width: 5rem;
-	height: 5.5rem;
-}
-
-.hskills {
-
-	align-items: center;
 }
 
 .hskills>a :hover {
 	transform: scale(1.25);
 }
 
+.hskills img {
+	padding: 2rem;
+	margin-left: 20px;
+	width: 5rem;
+	height: 5.5rem;
+}
 
 
 /*----------Modal----------*/
@@ -320,7 +319,7 @@ input[type="checkbox"]:checked~.reveal-if-active {
 .checkmark>#eyeClose1 {
 	position: absolute;
 	right: 10px;
-	top: 0;
+	top: 10px;
 	width: 2.5rem;
 	height: 2.5rem;
 	z-index: -1;
@@ -328,7 +327,7 @@ input[type="checkbox"]:checked~.reveal-if-active {
 .checkmark>#eyeClose2 {
 	position: absolute;
 	right: 10px;
-	top: 0;
+	top: 10px;
 	width: 2.5rem;
 	height: 2.5rem;
 	z-index: -1;
@@ -336,12 +335,11 @@ input[type="checkbox"]:checked~.reveal-if-active {
 .checkmark>#eyeClose3 {
 	position: absolute;
 	right: 10px;
-	top: 0;
+	top: 10px;
 	width: 2.5rem;
 	height: 2.5rem;
 	z-index: -1;
 }
-
 
 /*----------Loisirs----------*/
 /*----------Loisirs----------*/
