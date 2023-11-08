@@ -101,3 +101,18 @@ VALUES
 ('Science Fiction'),
 ('Roman'),
 ('Jeunesse');
+
+
+
+USE biblio;
+
+SELECT *
+
+FROM `p852_books` AS `b`
+
+INNER JOIN `p852_author` AS `a` ON `b`.`p852_author` = `a`.`id`;
+
+
+ADD COLUMN `id_author` 
+ADD CONSTRAINT p852_authorFK
+FOREIGN KEY (`id_author`) REFERENCES p852_author.id;
