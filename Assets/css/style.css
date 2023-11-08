@@ -201,11 +201,24 @@ body {
 	border: solid 1px #5A98B7;
 }
 
-.hardBox {
-	display: grid;
-	grid-template-columns: auto auto;
-	height: 990px;
-	padding: 1.5rem;
+
+@media only screen and (max-width: 767px) {
+	.hardBox {
+		display: grid;
+		grid-template-columns: auto auto;
+		height: 990px;
+		padding: 1.5rem;
+	}
+}
+	
+@media only screen and (min-width: 768px) {
+	.hardBox {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		height: 800px;
+		width: auto   ;
+		padding: 1.5rem;
+	}
 }
 
 .hskills {
@@ -214,7 +227,6 @@ body {
 	justify-content: center;
 	height: 10rem;
 	width: 100%;
-	
 }
 
 .hskills :hover svg {
@@ -243,8 +255,6 @@ body {
 	height: 5.5rem;
 }
 
-
-
 /*----------Modal----------*/
 
 
@@ -255,11 +265,11 @@ body {
 /*----------Soft Skills----------*/
 .SoftSkills {
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 33% 33% 33%;
 }
 
 .softEl {
-	margin-left: 0%;
+	margin-left: 0;
 	margin-top: 1rem;
 	margin-bottom: 0.8rem;
 }
@@ -271,6 +281,12 @@ body {
 .softEl>ul>li {
 	padding-bottom: 12px;
 	list-style: none;
+}
+
+#listOne{
+	padding-left: 10px;
+	margin-right: 0;
+	padding-right: 0;
 }
 
 #listTwo {
