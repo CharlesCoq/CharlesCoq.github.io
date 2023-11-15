@@ -4,7 +4,7 @@ body {
 	padding: 0px;
 	width: 100%;
 
-	/* forced-color-adjust: none; */
+	forced-color-adjust: none;
 
 	font-size: 16px;
 	color: white;
@@ -125,6 +125,7 @@ body {
 	grid-area: contact;
 	border: solid 1px #5A98B7;
 	text-align: center;
+	width: 14rem;
 }
 
 .contactItems {
@@ -144,7 +145,6 @@ body {
 		flex-direction: column;
 	}
 }
-
 
 .logo {
 
@@ -168,7 +168,6 @@ body {
 .contactDiv svg {
 	transition: 0.5s;
 }
-
 
 #logophone {
 	width: 3.4rem;
@@ -201,7 +200,6 @@ body {
 	border: solid 1px #5A98B7;
 }
 
-
 @media only screen and (max-width: 767px) {
 	.hardBox {
 		display: grid;
@@ -216,7 +214,7 @@ body {
 		display: grid;
 		grid-template-columns: auto auto auto;
 		height: 800px;
-		width: auto   ;
+		width:  40rem;
 		padding: 1.5rem;
 	}
 }
@@ -302,9 +300,16 @@ body {
 /*---------- Formations ----------*/
 /*---------- Formations ----------*/
 /*---------- Formations ----------*/
+
 .item4 {
 	grid-area: right;
 	border: solid 1px #5A98B7;
+}
+
+@media only screen and (min-width: 768px) {
+	.item4 {
+		width: 50rem;
+	}
 }
 
 .formations {
@@ -386,6 +391,26 @@ input[type="checkbox"]:checked~.reveal-if-active {
 	z-index: -1;
 }
 
+/*----------Portofolio----------*/
+/*----------Portofolio----------*/
+/*----------Portofolio----------*/
+
+.portobox{
+	padding: 0.1rem;
+}
+
+@media only screen and (min-width: 768px) {
+	.portobox{
+		padding: 1rem;
+	}
+}
+
+/* .portobox > a :hover svg {
+	transform: scale(1.15);
+	transition: 0.5s;
+	filter: drop-shadow(0 0 0.4rem rgb(32, 170, 212));
+} */
+
 /*----------Loisirs----------*/
 /*----------Loisirs----------*/
 /*----------Loisirs----------*/
@@ -403,7 +428,6 @@ input[type="checkbox"]:checked~.reveal-if-active {
 	gap: 1em;
 	margin: 1%;
 }
-
 
 .zoom {
 	border: solid 1px #386982;
@@ -456,4 +480,5 @@ input[type="checkbox"]:checked~.reveal-if-active {
 /*----------Fx----------*/
 .item5>.grid-container :hover {
 	transform: scale(1.05);
+	transition: 0.4s;
 }
