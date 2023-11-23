@@ -125,7 +125,7 @@ body {
 	grid-area: contact;
 	border: solid 1px #5A98B7;
 	text-align: center;
-	width: 14rem;
+	width: 100%;
 }
 
 .contactItems {
@@ -140,6 +140,10 @@ body {
 
 @media only screen and (min-width:768px) {
 
+	.contact-window {
+		width: 14rem;
+	}
+
 	.contactItems {
 		display: flex;
 		flex-direction: column;
@@ -153,7 +157,7 @@ body {
 	margin-bottom: 10px;
 }
 
-.contactDiv>a{
+.contactDiv>a {
 	text-decoration: none;
 	color: #fff;
 
@@ -208,13 +212,13 @@ body {
 		padding: 1.5rem;
 	}
 }
-	
+
 @media only screen and (min-width: 768px) {
 	.hardBox {
 		display: grid;
 		grid-template-columns: auto auto auto;
 		height: 800px;
-		width:  40rem;
+		width: 40rem;
 		padding: 1.5rem;
 	}
 }
@@ -248,13 +252,125 @@ body {
 .hskills>a>h3 {
 	background-color: #ffffff00;
 }
+
 .hskills img {
 	width: 5rem;
 	height: 5.5rem;
 }
 
 /*----------Modal----------*/
+/* ANIMATED CLOSE BUTTON */
 
+.close-modal {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 5px;
+	right: 40px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.leftright {
+	height: 4px;
+	width: 20px;
+	position: absolute;
+	margin-top: 24px;
+	background-color: #5A98B7;
+	border-radius: 2px;
+	transform: rotate(45deg);
+	transition: all .3s ease-in;
+}
+
+.rightleft {
+	height: 4px;
+	width: 20px;
+	position: absolute;
+	margin-top: 24px;
+	background-color: #5A98B7;
+	border-radius: 2px;
+	transform: rotate(-45deg);
+	transition: all .3s ease-in;
+}
+
+.close-modal:hover .leftright {
+	transform: rotate(-45deg);
+	background-color: #6dbce4;
+	filter: drop-shadow(0 0 0.4rem rgb(32, 170, 212))
+
+}
+
+.close-modal:hover .rightleft {
+	transform: rotate(45deg);
+	background-color: #6dbce4;
+	filter: drop-shadow(0 0 0.4rem rgb(32, 170, 212))
+}
+
+/* MODAL TITLE */
+
+h1 {
+	font-size: 2.3rem;
+	margin-bottom: 2rem;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Noto Sans', sans-serif;
+	text-shadow: #6bc4f0e1  0px 2px 5px;
+}
+
+p {
+	font-size: 1.4rem;
+	font-family: 'Noto Sans', sans-serif;
+}
+
+/* CLASSES TO MAKE MODAL WORK */
+
+.hidden {
+	display: none;
+}
+
+.modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+
+
+	background-image: repeating-linear-gradient(173deg, rgb(39, 49, 54) 0px, rgb(39, 49, 54) 0px, transparent 0px, transparent 1px, rgb(39, 49, 54) 1px, rgb(39, 49, 54) 4px, transparent 4px, transparent 5px, rgb(39, 49, 54) 5px, rgb(39, 49, 54) 8px), repeating-linear-gradient(218deg, rgb(39, 49, 54) 0px, rgb(39, 49, 54) 0px, transparent 0px, transparent 1px, rgb(39, 49, 54) 1px, rgb(39, 49, 54) 4px, transparent 4px, transparent 5px, rgb(39, 49, 54) 5px, rgb(39, 49, 54) 8px), linear-gradient(128deg, rgb(59, 59, 59), rgb(4, 4, 4));
+	padding: 2rem;
+	border-radius: 5px;
+	box-shadow: 0 0.5rem 1.5rem #5a98b765;
+	z-index: 10;
+	border: 1px solid #5A98B7;
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+	.modal {
+		width: 60%;
+		padding: 5rem;
+	}
+}
+
+body.modal-open {
+	overflow: hidden;
+}
+
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(3px);
+	z-index: 5;
+
+}
 
 
 /*----------Soft Skills----------*/
@@ -281,7 +397,7 @@ body {
 	list-style: none;
 }
 
-#listOne{
+#listOne {
 	padding-left: 10px;
 	margin-right: 0;
 	padding-right: 0;
@@ -395,12 +511,12 @@ input[type="checkbox"]:checked~.reveal-if-active {
 /*----------Portofolio----------*/
 /*----------Portofolio----------*/
 
-.portobox{
+.portobox {
 	padding: 0.1rem;
 }
 
 @media only screen and (min-width: 768px) {
-	.portobox{
+	.portobox {
 		padding: 1rem;
 	}
 }

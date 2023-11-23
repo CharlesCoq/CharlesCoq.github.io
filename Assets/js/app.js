@@ -24,10 +24,58 @@
 // }
 
 
+//--------------- Modal box---------------
+
+// 'use strict';
+
+const modals = document.querySelectorAll('.modal');
+const overlays = document.querySelectorAll('.overlay');
+const btnCloseModals = document.querySelectorAll('.close-modal');
+const btnOpenModals = document.querySelectorAll('.show-modal');
+const body = document.body;
+
+function openModal(index) {
+
+
+    modals[index].classList.remove('hidden');
+    overlays[index].classList.remove('hidden');
+    body.classList.add('modal-open');
+
+}
+
+function closeModal(index) {
+    modals[index].classList.add('hidden');
+    overlays[index].classList.add('hidden');
+    body.classList.remove('modal-open');
+}
+
+btnOpenModals.forEach((btn, index) => {
+    btn.addEventListener('click', () => openModal(index));
+});
+
+btnCloseModals.forEach((btn, index) => {
+    btn.addEventListener('click', () => closeModal(index));
+});
+
+overlays.forEach((overlay, index) => {
+    overlay.addEventListener('click', () => closeModal(index));
+});
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+        modals.forEach((modal, index) => {
+            if (!modal.classList.contains('hidden')) {
+                closeModal(index);
+            }
+        });
+    }
+});
+
+
 //--------------- Switch incon degree's box---------------
 
 function changeIcon1() {
-    var icon1 = document.getElementById("eyeClose1");  
+    var icon1 = document.getElementById("eyeClose1");
 
     if (icon1.src.match("EyeClose.png")) {
         icon1.src = "../Assets/Icon/Formations/EyeOpen.png";
@@ -36,7 +84,7 @@ function changeIcon1() {
     }
 };
 
-function changeIcon2() { 
+function changeIcon2() {
     var icon2 = document.getElementById("eyeClose2");
 
     if (icon2.src.match("EyeClose.png")) {
@@ -55,3 +103,4 @@ function changeIcon3() {
         icon3.src = "../Assets/Icon/Formations/EyeClose.png";
     }
 };
+
