@@ -36,6 +36,8 @@ const body = document.body;
 
 function openModal(index) {
 
+        // Sauvegarder la position de défilement actuelle
+        scrollTop = window.scrollY || window.pageYOffset;
 
     modals[index].classList.remove('hidden');
     overlays[index].classList.remove('hidden');
@@ -47,6 +49,9 @@ function closeModal(index) {
     modals[index].classList.add('hidden');
     overlays[index].classList.add('hidden');
     body.classList.remove('modal-open');
+
+        // Restaurer la position de défilement après la fermeture de la modal
+        window.scrollTo(0, scrollTop);
 }
 
 btnOpenModals.forEach((btn, index) => {
