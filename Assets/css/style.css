@@ -91,6 +91,7 @@ body {
 
 .item1 {
 	grid-area: header;
+	width: 100%;
 	background-color: #386982;
 	margin-top: 0;
 	padding: 15px;
@@ -99,8 +100,8 @@ body {
 }
 
 .IdPic {
-	width: 150px;
-	height: 150px;
+	width: 200px;
+	height: 200px;
 	margin: 8px;
 	border-radius: 50%;
 	border: solid 2px white;
@@ -135,13 +136,13 @@ body {
 }
 
 .contactItems>div {
-	margin: 1rem;
+	margin: 1.3rem;
 }
 
 @media only screen and (min-width:768px) {
 
 	.contact-window {
-		width: 14rem;
+		width: 100%;
 	}
 
 	.contactItems {
@@ -193,7 +194,7 @@ body {
 	height: 3.5rem;
 }
 
-h4{
+h4 {
 	text-align: center;
 }
 
@@ -221,17 +222,18 @@ h4{
 		display: grid;
 		grid-template-columns: auto auto auto;
 		height: 800px;
-		width: 40rem;
-		padding: 1.5rem;
+		width: 100%;
+		padding: 0.2rem;
 	}
 }
 
 .hskills {
 	display: flex;
-	align-content: center;
-	justify-content: center;
+	align-content: space-around;
+	justify-content: space-around;
 	height: 10rem;
 	width: 100%;
+	margin-top: 1rem;
 }
 
 .hskills :hover svg {
@@ -378,9 +380,15 @@ body.modal-open {
 /*----------Soft Skills----------*/
 /*----------Soft Skills----------*/
 .SoftSkills {
-	display: grid;
-	grid-template-columns: 33% 33% 33%;
+	/* display: grid;
+	grid-template-columns: 33% 33% 33%; */
+
+	height: 100%;
+	display: flex;
+	align-content: space-around;
+	justify-content: space-around;
 }
+
 
 .softEl {
 	margin-left: 0;
@@ -412,6 +420,18 @@ body.modal-open {
 	height: 8rem;
 }
 
+@media only screen and (min-width: 768px) {
+	.softEl {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.SoftSkills {
+		margin: 0.5rem;
+	}
+}
+
 /*---------- Formations ----------*/
 /*---------- Formations ----------*/
 /*---------- Formations ----------*/
@@ -419,12 +439,13 @@ body.modal-open {
 
 .item4 {
 	grid-area: right;
+	width: 100%;
 	border: solid 1px #5A98B7;
 }
 
 @media only screen and (min-width: 768px) {
 	.item4 {
-		width: 50rem;
+		width: 100%;
 	}
 }
 
@@ -449,7 +470,7 @@ body.modal-open {
 
 input[type="checkbox"]:checked~.reveal-if-active {
 	opacity: 1;
-	max-height: 13rem;
+	max-height: 340px;
 	overflow: visible;
 	transform: scale(1);
 	margin: 1rem;
@@ -469,7 +490,8 @@ input[type="checkbox"]:checked~.reveal-if-active {
 
 .box>label>h3 {
 	text-align: center;
-	font-size: 18px;
+	font-size: 28px;
+	text-shadow: none;
 }
 
 .box input {
@@ -514,35 +536,43 @@ input[type="checkbox"]:checked~.reveal-if-active {
 .portobox {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	width: 100%;
-	padding: 0.1rem;
+	padding: 5px;
 }
 
 @media only screen and (min-width: 768px) {
 	.portobox {
-		padding: 1rem;
+		padding: 5px;
 	}
+
+	.project {
+		width: 100%;
+	}
+
 }
 
-.project{
+.project {
+	display: flex;
+	flex-direction: column;
+	width: 96%;
 	border: 1px solid #fff;
 	margin: 6px;
 	border-radius: 3px;
 }
 
-.project>h3{
+.project>h3 {
 	margin: 2px;
 	padding: 2px;
 	text-align: center;
 }
 
-.project > hr{
+.project>hr {
 	width: 80%;
 	color: #fff;
 }
 
-.project >p{
+.project>p {
 	margin: 15px;
 	font-size: 18px;
 }
@@ -590,19 +620,69 @@ input[type="checkbox"]:checked~.reveal-if-active {
 
 .item5>.grid-container {
 	display: grid;
-	grid-template-columns: repeat (auto-fit, minmax(220px, 1fr));
+	/* grid-template-columns: repeat (auto-fit, minmax(220px, 1fr)); */
+	grid-template-columns: auto auto auto auto;
 	grid-auto-rows: 220px;
 	gap: 1em;
-	margin: 1%;
+	margin: 1rem;
 }
 
 .zoom {
+
+	/* align-content: center; */
 	border: solid 1px #386982;
 	border-radius: 2px;
+	filter: grayscale(70%);
+}
+
+.zoom:hover {
+	transform: scale(1.02);
+	filter: grayscale(0%);
+	transition: 0.4s;
+	box-shadow: inset 0 65px 0 0 #5a98b7da;
+}
+
+.zoom:hover h4 {
+	margin: -0.1rem;
+	opacity: 1;
+	color: white;
+	transition: 1s;
+}
+
+.hidetxt {
+	opacity: 0;
+}
+
+.hidetxt>ul{
+	list-style-type: none;
+	font-size: 24px;
+}
+
+.hidetxt>ul>li{
+	padding-bottom: 5px;
+	font-weight: 600;
+}
+
+.zoom:hover .hidetxt {
+	
+	opacity: 1;
+	transition: 0.4s;
+	border: solid 1px #5A98B7;
+	border-radius: 2px;
+	margin: 2rem;
+	padding: 0rem;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+h4 {
+	opacity: 0;
+	font-size: 45px;
+	color: white;
 }
 
 #cook {
 	grid-column: span 4 / auto;
+	grid-row: span 2 / auto;
 	background-image: url(../Img/cook.jpg);
 	background-size: cover;
 	background-position: top;
@@ -610,7 +690,7 @@ input[type="checkbox"]:checked~.reveal-if-active {
 }
 
 #games {
-	grid-column: span 2 / auto;
+	grid-column: span 4 / auto;
 	grid-row: span 2 / auto;
 	background-image: url(../Img/jeux.jpg);
 	background-size: cover;
@@ -619,17 +699,17 @@ input[type="checkbox"]:checked~.reveal-if-active {
 }
 
 #prod {
-	grid-column: span 2 / auto;
+	grid-column: span 4 / auto;
 	grid-row: span 2 / auto;
 	background-image: url(../Img/synth.jpg);
 	background-size: cover;
 	background-position: center;
 	text-align: center;
-
 }
 
 #party {
-	grid-column: span 2 / auto;
+	grid-column: span 4 / auto;
+	grid-row: span 2 / auto;
 	background-image: url(../Img/fest.jpg);
 	background-size: cover;
 	background-position: center;
@@ -638,14 +718,36 @@ input[type="checkbox"]:checked~.reveal-if-active {
 
 #travel {
 	grid-column: span 4 / auto;
+	grid-row: span 2 / auto;
 	background-image: url(../Img/voyage.jpg);
 	background-size: cover;
 	background-position: center;
 	text-align: center;
 }
 
-/*----------Fx----------*/
-.item5>.grid-container :hover {
-	transform: scale(1.05);
-	transition: 0.4s;
+@media only screen and (min-width: 768px) {
+	#cook {
+		grid-column: span 4 / auto;
+
+	}
+
+	#games {
+		grid-column: span 2 / auto;
+		grid-row: span 4 / auto;
+
+	}
+
+	#prod {
+		grid-column: span 2 / auto;
+		grid-row: span 4 / auto;
+
+	}
+
+	#party {
+		grid-column: span 2 / auto;
+	}
+
+	#travel {
+		grid-column: span 4 / auto;
+	}
 }
