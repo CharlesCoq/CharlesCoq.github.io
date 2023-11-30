@@ -15,9 +15,7 @@ body {
 
 /*----------h1 Anim----------*/
 .titlebox1 {
-
 	font-family: 'Noto Sans', sans-serif;
-
 }
 
 .waviy1 {
@@ -100,11 +98,12 @@ body {
 }
 
 .IdPic {
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	margin: 8px;
 	border-radius: 50%;
 	border: solid 2px white;
+	object-fit: cover;
 }
 
 .item1>hr {
@@ -202,9 +201,9 @@ h4 {
 /*----------Hard Skills----------*/
 /*----------Hard Skills----------*/
 /*----------Hard Skills----------*/
-.item3 {
+.item3 { 
 	grid-area: main;
-	width: auto;
+	width: 100%;
 	border: solid 1px #5A98B7;
 }
 
@@ -443,12 +442,6 @@ body.modal-open {
 	border: solid 1px #5A98B7;
 }
 
-@media only screen and (min-width: 768px) {
-	.item4 {
-		width: 100%;
-	}
-}
-
 .formations {
 	margin: 5px;
 }
@@ -628,43 +621,23 @@ input[type="checkbox"]:checked~.reveal-if-active {
 }
 
 .zoom {
-
-	/* align-content: center; */
 	border: solid 1px #386982;
 	border-radius: 2px;
-	filter: grayscale(70%);
 }
 
-.zoom:hover {
-	transform: scale(1.02);
-	filter: grayscale(0%);
-	transition: 0.4s;
-	box-shadow: inset 0 65px 0 0 #5a98b7da;
-}
-
-.zoom:hover h4 {
-	margin: -0.1rem;
-	opacity: 1;
-	color: white;
-	transition: 1s;
-}
-
-.hidetxt {
-	opacity: 0;
-}
-
-.hidetxt>ul{
+.hidetxt>ul {
 	list-style-type: none;
 	font-size: 24px;
+	padding: 0;
 }
 
-.hidetxt>ul>li{
+.hidetxt>ul>li {
 	padding-bottom: 5px;
 	font-weight: 600;
 }
 
 .zoom:hover .hidetxt {
-	
+
 	opacity: 1;
 	transition: 0.4s;
 	border: solid 1px #5A98B7;
@@ -675,7 +648,6 @@ input[type="checkbox"]:checked~.reveal-if-active {
 }
 
 h4 {
-	opacity: 0;
 	font-size: 45px;
 	color: white;
 }
@@ -725,7 +697,61 @@ h4 {
 	text-align: center;
 }
 
+@media only screen and (max-width: 767px) {
+	.zoom {
+		box-shadow: inset 0 65px 0 0 #5a98b7da;
+	}
+
+	h4 {
+		margin-top: 0rem;
+	}
+
+	.hidetxt {
+
+		border: solid 1px #5A98B7;
+		border-radius: 2px;
+		margin: 2rem;
+		padding: 0rem;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+
+	.hidetxt{
+
+	}
+}
+
 @media only screen and (min-width: 768px) {
+
+	.zoom {
+		border: solid 1px #386982;
+		border-radius: 2px;
+		filter: grayscale(70%);
+	}
+
+	.zoom:hover {
+		transform: scale(1.02);
+		filter: grayscale(0%);
+		transition: 0.4s;
+		box-shadow: inset 0 65px 0 0 #5a98b7da;
+	}
+
+	h4 {
+		opacity: 0;
+		font-size: 45px;
+		color: white;
+	}
+
+	.zoom:hover h4 {
+		margin: -0.1rem;
+		opacity: 1;
+		color: white;
+		transition: 1s;
+	}
+
+	.hidetxt {
+		opacity: 0;
+	}
+
 	#cook {
 		grid-column: span 4 / auto;
 
