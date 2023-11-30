@@ -201,7 +201,7 @@ h4 {
 /*----------Hard Skills----------*/
 /*----------Hard Skills----------*/
 /*----------Hard Skills----------*/
-.item3 { 
+.item3 {
 	grid-area: main;
 	width: 100%;
 	border: solid 1px #5A98B7;
@@ -228,7 +228,7 @@ h4 {
 
 .hskills {
 	display: flex;
-	align-content: space-around;
+	align-items: space-around;
 	justify-content: space-around;
 	height: 10rem;
 	width: 100%;
@@ -379,12 +379,11 @@ body.modal-open {
 /*----------Soft Skills----------*/
 /*----------Soft Skills----------*/
 .SoftSkills {
-	/* display: grid;
-	grid-template-columns: 33% 33% 33%; */
-
-	height: 100%;
+	display: grid;
+	grid-template-columns: 33% 33% 33%;
+	height: 250px;
 	display: flex;
-	align-content: space-around;
+	align-items: center;
 	justify-content: space-around;
 }
 
@@ -402,6 +401,7 @@ body.modal-open {
 .softEl>ul>li {
 	padding-bottom: 12px;
 	list-style: none;
+	font-size: 22px;
 }
 
 #listOne {
@@ -415,8 +415,8 @@ body.modal-open {
 }
 
 .softEl>img {
-	width: 8rem;
-	height: 8rem;
+	width: 12rem;
+	height: 12rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -574,17 +574,18 @@ input[type="checkbox"]:checked~.reveal-if-active {
 /*----------Button Visit----------*/
 
 .buttonvisit {
+	/* width: 12rem; */
 	display: block;
 	font-size: 1.8rem;
 	font-weight: 600;
 	background-image: linear-gradient(to right, #bcaae4 0%, #5A98B7 51%, #bcaae4 100%);
-	margin: 25px;
-	padding: 8px;
+	margin: 25px auto;
+	padding: 8px 50px;
 	text-align: center;
 	text-transform: uppercase;
 	background-size: 200% auto;
 	color: #fff;
-	box-shadow: 0 0 20px #eeeeee9a;
+	box-shadow: 0 0 10px #eeeeee9a;
 	border-radius: 10px;
 	border: none;
 	cursor: pointer;
@@ -714,10 +715,6 @@ h4 {
 		padding: 0rem;
 		background-color: rgba(0, 0, 0, 0.5);
 	}
-
-	.hidetxt{
-
-	}
 }
 
 @media only screen and (min-width: 768px) {
@@ -729,7 +726,6 @@ h4 {
 	}
 
 	.zoom:hover {
-		transform: scale(1.02);
 		filter: grayscale(0%);
 		transition: 0.4s;
 		box-shadow: inset 0 65px 0 0 #5a98b7da;
