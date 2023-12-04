@@ -9,6 +9,7 @@ body {
 	font-size: 16px;
 	color: white;
 	font-family: 'Noto Sans', sans-serif;
+	overflow-x: hidden;
 
 	background-image: repeating-linear-gradient(173deg, rgb(39, 49, 54) 0px, rgb(39, 49, 54) 0px, transparent 0px, transparent 1px, rgb(39, 49, 54) 1px, rgb(39, 49, 54) 4px, transparent 4px, transparent 5px, rgb(39, 49, 54) 5px, rgb(39, 49, 54) 8px), repeating-linear-gradient(218deg, rgb(39, 49, 54) 0px, rgb(39, 49, 54) 0px, transparent 0px, transparent 1px, rgb(39, 49, 54) 1px, rgb(39, 49, 54) 4px, transparent 4px, transparent 5px, rgb(39, 49, 54) 5px, rgb(39, 49, 54) 8px), linear-gradient(128deg, rgb(59, 59, 59), rgb(4, 4, 4));
 }
