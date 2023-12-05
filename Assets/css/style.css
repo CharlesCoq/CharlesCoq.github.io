@@ -56,6 +56,7 @@ body {
 	font-family: 'Noto Sans', sans-serif;
 	background-color: #5A98B7;
 	max-width: 100%;
+	width: 100%;
 	margin: 0;
 	min-width: 287px;
 	background-image: linear-gradient(240deg, rgba(107, 107, 107, 0.04) 0%, rgba(107, 107, 107, 0.04) 8%, rgba(31, 31, 31, 0.07) 8%, rgba(31, 31, 31, 0.07) 100%), linear-gradient(208deg, rgba(228, 228, 228, 0.12) 0%, rgba(228, 228, 228, 0.12) 62%, rgba(54, 54, 54, 0.04) 62%, rgba(54, 54, 54, 0.04) 100%), linear-gradient(323deg, rgba(18, 18, 18, 0.04) 0%, rgba(18, 18, 18, 0.04) 37%, rgba(233, 233, 233, 0.04) 37%, rgba(233, 233, 233, 0.04) 100%), linear-gradient(452deg, rgba(201, 201, 201, 0.04) 0%, rgba(201, 201, 201, 0.04) 55%, rgba(47, 47, 47, 0.04) 55%, rgba(47, 47, 47, 0.04) 100%), linear-gradient(469deg, rgba(172, 172, 172, 0.04) 0%, rgba(172, 172, 172, 0.04) 33%, rgba(26, 26, 26, 0.04) 33%, rgba(26, 26, 26, 0.04) 100%), linear-gradient(263deg, rgba(11, 11, 11, 0.04) 0%, rgba(11, 11, 11, 0.04) 38%, rgba(87, 87, 87, 0.04) 38%, rgba(87, 87, 87, 0.04) 100%), linear-gradient(546deg, rgba(199, 199, 199, 0.04) 0%, rgba(199, 199, 199, 0.04) 69%, rgba(4, 4, 4, 0.04) 69%, rgba(4, 4, 4, 0.04) 100%), linear-gradient(512deg, rgba(23, 33, 69, 0.35) 0%, rgba(23, 33, 69, 0.35) 20%, rgb(90, 152, 183) 20%, rgb(90, 152, 183) 100%), linear-gradient(289deg, rgb(173, 212, 236), rgb(173, 212, 236));
@@ -87,7 +88,7 @@ body {
 .grid-container {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 336;
 }
 
 @media only screen and (min-width: 800px) and (max-width:1199px) {
@@ -122,9 +123,10 @@ body {
 	align-items: center;
 	justify-content: center;
 
-	width: 100%; 
 	max-width: 100%;
-	padding: 15px;
+	width: 100vw;
+	padding: 12px;
+	margin: 0px;
 
 
 	background-color: #386982;
@@ -585,9 +587,10 @@ input[type="checkbox"]:checked~.reveal-if-active {
 .portobox {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
-	width: 100%;
-	padding: 5px;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	padding: 1px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -606,7 +609,7 @@ input[type="checkbox"]:checked~.reveal-if-active {
 	flex-direction: column;
 	width: auto;
 	border: 1px solid #fff;
-	margin: 6px;
+	margin: 2px;
 	border-radius: 3px;
 }
 
@@ -665,6 +668,10 @@ input[type="checkbox"]:checked~.reveal-if-active {
 
 .item5 {
 	grid-area: footer;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	border: solid 1px #5A98B7;
 }
 
@@ -680,6 +687,8 @@ input[type="checkbox"]:checked~.reveal-if-active {
 .zoom {
 	border: solid 1px #386982;
 	border-radius: 2px;
+	width: 342px;
+	max-width: 97vw;
 }
 
 .hidetxt>ul {
