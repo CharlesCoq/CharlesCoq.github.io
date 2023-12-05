@@ -754,7 +754,7 @@ h4 {
 	text-align: center;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1199px) {
 	.zoom {
 		box-shadow: inset 0 65px 0 0 #5a98b7da;
 	}
@@ -773,7 +773,7 @@ h4 {
 	}
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1199px) {
 
 	.zoom {
 		border: solid 1px #386982;
