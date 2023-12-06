@@ -274,7 +274,7 @@ h4 {
 	height: 10rem;
 	width: auto;
 	margin-top: 1rem;
-	margin-left: -22px
+	margin-left: -22px;
 }
 
 .hskills :hover svg {
@@ -490,6 +490,10 @@ body.modal-open {
 		margin: 0.5rem;
 		height: 250px;
 	}
+}
+
+#softBox{
+	margin-top: 8px;
 }
 
 /*---------- Formations ----------*/
