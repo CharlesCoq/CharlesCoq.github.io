@@ -140,7 +140,8 @@ body {
 .IdPic {
 	width: 250px;
 	height: 250px;
-	margin: 8px;
+	margin: 10px;
+
 	border-radius: 50%;
 	border: solid 2px white;
 	object-fit: cover;
